@@ -1,191 +1,172 @@
 <!DOCTYPE html>
 <html lang="Eng">
+  <head>
+    <title>HOME</title>
+    <style>
+      body {
+        background-image: url(back01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
+      div.nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
 
-<head>
+      div.nav li {
+        float: right;
+      }
 
-    <title> HOME
-    </title>
-    <STYLE>
-        body {
+      div.nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-            background-image: url(back01.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+      div.nav li.logo {
+        float: left;
+      }
 
+      div.nav li a:hover {
+        background-color: gray;
+      }
 
-        div.nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: black;
+      .dropdown {
+        float: right;
+        overflow: hidden;
+      }
 
+      .dropdown:hover {
+        background-color: gray;
+      }
 
-        }
+      .dropdown .dropdown-btn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
 
-        div.nav li {
+      .contents {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
 
-            float: right;
+      .contents a:hover {
+        background-color: #ad9191;
+      }
 
-        }
+      .dropdown:hover .contents {
+        display: block;
+      }
 
-        div.nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+      p {
+        font-size: 28px;
+        text-align: center;
+        text-shadow: 8px 8px 8px red;
+      }
 
-        }
+      h1 {
+        text-shadow: 8px 8px 8px red;
+      }
 
-        div.nav li.logo {
+      img,
+      iframe {
+        display: flex;
 
-            float: left;
+        margin: auto;
+      }
+    </style>
+  </head>
 
-        }
-
-
-        div.nav li a:hover {
-            background-color: blue;
-
-        }
-
-        .dropdown {
-            float: right;
-            overflow: hidden;
-        }
-
-        .dropdown:hover {
-
-            background-color: blue;
-        }
-
-        .dropdown .dropdown-btn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .contents {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .contents a:hover {
-            background-color: #ad9191;
-
-        }
-
-        .dropdown:hover .contents {
-            display: block;
-
-        }
-
-        p {
-            font-size: 28px;
-            text-align: center;
-            text-shadow: 8px 8px 8px yellow;
-
-        }
-
-        h1 {
-            text-shadow: 8px 8px 8px yellow;
-        }
-
-        img,
-        iframe {
-
-            display: flex;
-
-            margin: auto;
-        }
-    </STYLE>
-
-</head>
-
-
-<body>
+  <body>
     <div class="nav">
-        <header>
-            <nav>
+      <header>
+        <nav>
+          <ul>
+            <li class="logo"><a href="index.html">MY PERSONAL COMPUTER</a></li>
 
+            <li><a href="contact.html">CONTACT ME</a></li>
+            <li><a href="index.html">HOME</a></li>
+          </ul>
 
-                <ul>
-                    <li class="logo"><a href="index.html">MY PERSONAL COMPUTER</a></li>
-
-                    <li><a href="contact.html">CONTACT ME</a></li>
-                    <li><a href="index.html">HOME</a></li>
-                </ul>
-
-                <div class="dropdown">
-                    <div>
-                        <button class="dropdown-btn">
-
-                            ABOUT THIS SITE
-
-                        </button>
-                        <div class="about this site">
-                            <a href="page.html">MY DREAM PC SET UPS</a>
-                            <a href="Activity2.html">NUMBER SYSTEM</a>
-                            <a href="Activity3.html">DATA FORMATS</a>
-                            <a href="Activity5.html">MOBILE AND GAMES</a>
-                            <a href="Activity6.html">STORAGE PLATFORM</a>
-                            <a href="Activity7.html">DATABASE PLATFORM</a>
-                            <a href="Activity8.html">APPLICATION PLATFORM</a>
-                            <a href="Activity9.html">WEB PLATFORM</a>
-                            <a href="Activity10.html">CONTENT MANAGEMENT SYSTEM</a>
-                            <a href="Activity11.html">OPERATING SYSTEMS</a>
-                            <a href="Activity12.html">ARTIFICIAL INTEL. PLATFORM</a>
-                            <a href="Activity13.html">MEDIA PLATFORMS</a>
-                            <a href="Activity14.html">INTERNET OF THINGS PLATFORM</a>
-
-                            
-                        </div>
-                    </div>
-                </div>
-
-
-            </nav>
-        </header>
-
+          <div class="dropdown">
+            <div>
+              <button class="dropdown-btn">ABOUT THIS SITE</button>
+              <div class="about this site">
+                <a href="page.html">MY DREAM PC SET UPS</a>
+                <a href="Activity2.html">NUMBER SYSTEM</a>
+                <a href="Activity3.html">DATA FORMATS</a>
+                <a href="Activity5.html">MOBILE AND GAMES</a>
+                <a href="Activity6.html">STORAGE PLATFORM</a>
+                <a href="Activity7.html">DATABASE PLATFORM</a>
+                <a href="Activity8.html">APPLICATION PLATFORM</a>
+                <a href="Activity9.html">WEB PLATFORM</a>
+                <a href="Activity10.html">CONTENT MANAGEMENT SYSTEM</a>
+                <a href="Activity11.html">OPERATING SYSTEMS</a>
+                <a href="Activity12.html">ARTIFICIAL INTEL. PLATFORM</a>
+                <a href="Activity13.html">MEDIA PLATFORMS</a>
+                <a href="Activity14.html">INTERNET OF THINGS PLATFORM</a>
+                <a href="Activity15.html">SECURITY</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
     </div>
-    <br>
-    <br>
-    <br>
-    <h1 style="color:white">Operating Systems</h1>
-    <p style="color:white">The operating system (OS) manages all of the software and hardware on the computer. It
-        performs basic tasks such as
-        file, memory and process management, handling input and output, and controlling peripheral devices such as disk
-        drives
-        and printers..</p>
+    <br />
+    <br />
+    <br />
+    <h1 style="color: white">OPERATING SYSTEMS</h1>
+    <p style="color: white">
+      A computer system's operating system (OS) is a piece of software that
+      maintains and regulates its resources and operations. It serves as a
+      bridge between a computer's hardware and software components and offers a
+      platform for the execution of application applications. The operating
+      system offers a variety of services, such as memory management, input and
+      output operations control, file system and storage device management, and
+      user interface provision. The OS also oversees security and access
+      control, as well as access to system resources such the CPU, memory, and
+      peripherals. The operating systems Windows, MacOS, Linux, Unix, and
+      Android are a few examples. From desktop and laptop computers to mobile
+      phones, tablets, and servers, many operating systems are created for
+      various sorts of computers and gadgets.
+    </p>
 
-    <img src="OS.jpg" alt="numbers" width="700" height="350">
-    <br>
-    <br>
+    <img src="OS.jpg" alt="numbers" width="700" height="350" />
+    <br />
+    <br />
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fkGCLIQx1MI" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-
-
-
-</body>
-
-
-
-
-
-
-
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/fkGCLIQx1MI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/eSzEHMhRya8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </body>
 </html>
